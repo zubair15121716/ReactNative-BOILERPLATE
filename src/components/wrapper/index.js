@@ -6,9 +6,9 @@ import {images} from '../../services/utilities'
 export default function Wrapper({children,Bg=true,...props}) {
   return (
     <View style={styles.container}>
-      {Bg && <ImageBackground source={images.backgroundimg} style={styles.bgimg}>
+      {/* {Bg && <ImageBackground source={images.backgroundimg} style={styles.bgimg}>
               {children}
-            </ImageBackground> }
+            </ImageBackground> } */}
       {!Bg && children}
     </View>
   )

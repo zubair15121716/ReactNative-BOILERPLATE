@@ -5,6 +5,7 @@ let styles = StyleSheet.create({
     container: {
         flex:1,
         zIndex:0,
+        backgroundColor:'#000000',
     },
     bgimg: {
         width:null,

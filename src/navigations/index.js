@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import AuthNavigation from './auth';
+import StackNav from './stackNav';
 
 const AppStack = createNativeStackNavigator();
 
@@ -11,7 +11,7 @@ export default function Navigation() {
       <AppStack.Navigator
       screenOptions={{headerShown:false}}
       >
-        <AppStack.Screen name='auth-app' component={AuthNavigation}></AppStack.Screen>
+        <AppStack.Screen name='app' component={StackNav}></AppStack.Screen>
       </AppStack.Navigator>
     </NavigationContainer>
   )
